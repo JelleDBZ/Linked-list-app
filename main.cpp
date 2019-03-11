@@ -5,9 +5,9 @@
 using namespace std;
  
 
-void print(Node * node){
+void print(Node * node){ // will print the list
     
-    while(node->get_next() != NULL){
+    while(node != NULL){
         int data = node->get_data();
         cout << std::to_string(data) << endl;
         node = node->get_next();
@@ -23,6 +23,7 @@ int main()
     Node second(1);
     Node last(2);
 
+    start.set_next(&second);
     second.set_next(&last);
   
     print(&start);
