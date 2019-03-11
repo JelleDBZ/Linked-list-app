@@ -6,8 +6,6 @@ Bull
 
  + Bull(weight: int, liftCapacity: int, name: std::string)
  + to_string(): std::string
-
-
  ----
 
 Node
