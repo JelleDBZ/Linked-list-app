@@ -1,8 +1,13 @@
 #pragma once
 #include <string>
+#include "node.h"
 
 class LinkedList{
     public: 
         void get(int index);
-        std::string to_stringt();
+        LinkedList();
+        std::string to_string();
+        std::string print(Node * node);
+    private:
+        Node *head, *tail;
 };

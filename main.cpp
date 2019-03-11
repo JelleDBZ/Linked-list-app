@@ -5,7 +5,7 @@
 using namespace std;
  
 
-void print(Node * node){ // will print the list
+void print(Node * node){ // will print the nodes
     
     while(node != NULL){
         int data = node->get_data();
@@ -26,9 +26,10 @@ int main()
     start.set_next(&second);
     second.set_next(&last);
   
+    std::cout << "Showing data from nodes: " << endl;
     print(&start);
 
-    std::cout << "Testing result:" << endl;
+    std::cout << "Testing result from one node:" << endl;
     std::cout << bulldozer.to_string() << endl;
     std::cout << std::to_string(second.get_data()) << "   " << second.get_next() << endl;
 
