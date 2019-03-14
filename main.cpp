@@ -37,8 +37,7 @@ int main()
 
     std::cout << "Showing data from linkedlist: " << endl;
     list->print();
-    list->print();
-
+    
   /* with linkedlist class, if you comment this whole section the other outputs will appear! */
 
     std::cout << "Showing data from nodes: " << endl;
