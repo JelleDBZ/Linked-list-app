@@ -9,7 +9,7 @@ class LinkedList{
         void insert(int new_data);
         std::string to_string();
         void print();
-    public:
+    private:
         Node *head;
         int length;
 };
