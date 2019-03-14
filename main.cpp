@@ -1,6 +1,7 @@
 #include <iostream>
 #include "bull.h"
 #include "node.h"
+#include "linkedlist.h"
 
 using namespace std;
  
@@ -25,7 +26,19 @@ int main()
 
     start.set_next(&second);
     second.set_next(&last);
-  
+
+/* with linkedlist class, if you comment this whole section the other outputs will appear! */
+    LinkedList* list = new LinkedList();
+    list->insert(5);
+    list->insert(100);
+    list->insert(45);
+    list->insert(60);
+    list->insert(70);
+
+    std::cout << "Showing data from linkedlist: " << endl;
+    list->print(list->head);
+  /* with linkedlist class, if you comment this whole section the other outputs will appear! */
+
     std::cout << "Showing data from nodes: " << endl;
     print(&start);
 

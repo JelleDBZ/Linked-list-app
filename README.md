@@ -20,3 +20,7 @@ LinkedList
  
  + get(index: int)
  + to_string()
+
+ HOW TO RUN:
+ -> g++ main.cpp linkedlist.cpp bull.cpp node.cpp -o world
+ -> ./world
