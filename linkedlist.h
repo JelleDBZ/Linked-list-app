@@ -6,6 +6,7 @@ class LinkedList{
     public: 
         void get(int index);
         LinkedList();
+        void insert(int new_data);
         std::string to_string();
         std::string print(Node * node);
     private:

@@ -5,6 +5,10 @@ LinkedList::LinkedList(){
 
 }
 
+void insert(int new_data){
+    
+}
+
 // void LinkedList::print(Node * node){
 //      while(node != NULL){
 //         int data = node->get_data();
