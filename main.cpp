@@ -36,7 +36,9 @@ int main()
     list->insert(70);
 
     std::cout << "Showing data from linkedlist: " << endl;
-    list->print(list->head);
+    list->print();
+    list->print();
+
   /* with linkedlist class, if you comment this whole section the other outputs will appear! */
 
     std::cout << "Showing data from nodes: " << endl;

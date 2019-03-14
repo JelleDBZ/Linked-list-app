@@ -3,24 +3,26 @@
 #include "node.h"
 
 LinkedList::LinkedList(){
-    this->head = NULL;
+    this->head = nullptr;
     this->length = 0;
 }
 
-void LinkedList::insert(int new_data){
+void LinkedList::insert(int new_data)
+{
     Node* node = new Node(new_data);
     node->set_next(this->head);
     this->head = node;
     this->length++;
-
 }
 
-void LinkedList::print(Node * node){
+void LinkedList::print()
+{
     int i = 1;
-     while(this->head != NULL){
-        int data = node->get_data();
+    Node* n = this->head;
+    while(n != NULL){
+        int data = n->get_data();
         std::cout << i << ": " << data << std::endl;
-        node = node->get_next();
+        n = n->get_next();
         i++;
     }
 }

@@ -10,5 +10,5 @@ class Node{
         int get_data(void);
     private: 
         int data;
-        Node * next;    
+        Node * next = nullptr;    
 };
