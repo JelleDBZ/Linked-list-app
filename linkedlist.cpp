@@ -17,7 +17,7 @@ void LinkedList::insert(int new_data)
 
 void LinkedList::print()
 {
-    int i = 1;
+    int i = 0;
     Node* n = this->head;
     while(n != NULL){
         int data = n->get_data();
@@ -27,14 +27,14 @@ void LinkedList::print()
     }
 }
 
-// Node* LinkedList::get(int index){
-//     Node* n = this->head;
-//     int counter = 0;
-//     while(n != NULL && counter <= index){
-//         counter++;
-//         n = n->get_next();
-//     }
+int LinkedList::get(int index){
+    Node* n = this->head;
+    int counter = 0;
+    while(n != NULL && counter < index){
+        counter++;
+        n = n->get_next();
+    }
 
-//     return (n != NULL ) ? n->get_data() : NULL;
+    return (n != NULL ) ? n->get_data() : NULL;
     
-//}
+}

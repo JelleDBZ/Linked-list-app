@@ -4,7 +4,7 @@
 
 class LinkedList{
     public: 
-        Node* get(int index);
+        int get(int index);
         LinkedList();
         void insert(int new_data);
         std::string to_string();

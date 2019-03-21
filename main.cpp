@@ -40,8 +40,8 @@ int main()
     std::cout << "Showing data from linkedlist: " << endl;
     list->print();
 
-    // std::cout << "Showing the fourth node in the list" << endl;
-    // print(list->get(index)); //does not work yet
+    std::cout << "Showing the fourth node in the list" << endl;
+    std::cout << list->get(index) << endl; //does not work yet
     
   /* with linkedlist class, if you comment this whole section the other outputs will appear! */
 
