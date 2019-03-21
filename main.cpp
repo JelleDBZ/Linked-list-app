@@ -18,6 +18,8 @@ void print(Node * node){ // will print the nodes
 int main()
 {
 
+    int index = 4; //index to get from the linkedlist
+
     Bull bulldozer(300, 800, "Jelle");
 
     Node start(0);
@@ -37,6 +39,9 @@ int main()
 
     std::cout << "Showing data from linkedlist: " << endl;
     list->print();
+
+    // std::cout << "Showing the fourth node in the list" << endl;
+    // print(list->get(index)); //does not work yet
     
   /* with linkedlist class, if you comment this whole section the other outputs will appear! */
 

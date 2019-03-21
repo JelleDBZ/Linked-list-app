@@ -27,6 +27,14 @@ void LinkedList::print()
     }
 }
 
-void LinkedList::get(int index){
+Node* LinkedList::get(int index){
+    Node* n = this->head;
+    int counter = 0;
+    while(n != NULL && counter <= index){
+        counter++;
+        n = n->get_next();
+    }
+
+    return (n != NULL ) ? n->get_data() : NULL;
     
 }
