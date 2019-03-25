@@ -5,12 +5,21 @@
 
 using namespace std;
  
+
+
 int main()
 {
 
     int index = 4; //index to get from the linkedlist
 
     Bull bulldozer(300, 800, "Jelle");
+
+    Node start(0);
+    Node second(1);
+    Node last(2);
+
+    start.set_next(&second);
+    second.set_next(&last);
 
 /* with linkedlist class, if you comment this whole section the other outputs will appear! */
     LinkedList* list = new LinkedList();
