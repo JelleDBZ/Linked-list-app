@@ -8,7 +8,13 @@ LinkedList::LinkedList(){
 }
 
 LinkedList::~LinkedList(){
-    
+    Node* node = this->head;
+    while (node != 0){
+        Node* next = node->get_next();
+        delete node;
+        node = next;
+    }
+    this->head = nullptr;
 }
 
 void LinkedList::insert(int new_data)

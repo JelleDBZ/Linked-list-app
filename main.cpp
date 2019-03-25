@@ -5,29 +5,12 @@
 
 using namespace std;
  
-
-void print(Node * node){ // will print the nodes
-    
-    while(node != NULL){
-        int data = node->get_data();
-        cout << std::to_string(data) << endl;
-        node = node->get_next();
-    }
-}
-
 int main()
 {
 
     int index = 4; //index to get from the linkedlist
 
     Bull bulldozer(300, 800, "Jelle");
-
-    Node start(0);
-    Node second(1);
-    Node last(2);
-
-    start.set_next(&second);
-    second.set_next(&last);
 
 /* with linkedlist class, if you comment this whole section the other outputs will appear! */
     LinkedList* list = new LinkedList();
@@ -44,9 +27,6 @@ int main()
     std::cout << list->get(index) << endl; //does not work yet
     
   /* with linkedlist class, if you comment this whole section the other outputs will appear! */
-
-    std::cout << "Showing data from nodes: " << endl;
-    print(&start);
 
     std::cout << "Testing result from one node:" << endl;
     std::cout << bulldozer.to_string() << endl;
