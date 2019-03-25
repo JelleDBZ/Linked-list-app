@@ -7,6 +7,10 @@ LinkedList::LinkedList(){
     this->length = 0;
 }
 
+LinkedList::~LinkedList(){
+    
+}
+
 void LinkedList::insert(int new_data)
 {
     Node* node = new Node(new_data);
