@@ -38,6 +38,7 @@ int main()
     std::cout << "Testing result from one node:" << endl;
     std::cout << bulldozer.to_string() << endl;
     std::cout << std::to_string(second.get_data()) << "   " << second.get_next() << endl;
-
+    
+    delete list;
     return 0; //list will be removed
 }
