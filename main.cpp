@@ -5,8 +5,6 @@
 
 using namespace std;
  
-
-
 int main()
 {
 
@@ -41,5 +39,5 @@ int main()
     std::cout << bulldozer.to_string() << endl;
     std::cout << std::to_string(second.get_data()) << "   " << second.get_next() << endl;
 
-    return 0;
+    return 0; //list will be removed
 }
