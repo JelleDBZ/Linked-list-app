@@ -1,9 +1,9 @@
 #pragma once
 #include <string>
 
-class EmptyNodeException {
+class IndexOutofBoundsException {
     public:
-        EmptyNodeException(std::string message){
+        IndexOutofBoundsException(std::string message){
            this->message = message;
         }
     public:    

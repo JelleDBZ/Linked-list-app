@@ -1,6 +1,7 @@
 #include "linkedlist.h"
 #include <iostream>
 #include "node.h"
+#include "IndexOutofBoundsException.h"
 
 LinkedList::LinkedList(){
     this->head = nullptr;
@@ -41,6 +42,9 @@ int LinkedList::get(int index){
     Node* n = this->head;
     int counter = 0;
     while(n != NULL && counter < index){
+        if (index < 0 || index > this->length - 1) {
+            throw IndexOutofBoundsException("The index is out of bound!");
+        }
         counter++;
         n = n->get_next();
     }
