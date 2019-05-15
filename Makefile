@@ -1,13 +1,13 @@
 # Creating var
 CC=g++
 
-CFLAGS=-c -Wall -Ilib
+CFLAGS=-c -Wall -Ilib 
 	# -c only compile, no linking
 
 # Name of binary
 EXECUTABLE=world
 
-all: clean $(EXECUTABLE)
+all: $(EXECUTABLE)
 
 $(EXECUTABLE): main.o bull.o linkedlist.o node.o
 	$(CC) main.o bull.o linkedlist.o node.o -o $(EXECUTABLE)
